@@ -84,13 +84,22 @@ public class TestHibernate {
             }
         }
         System.out.println();
+
+        // Går också att göra på detta sättet men tyckte det var mer otydligt än mitt
+        // sätt
+        // List<Object[]> authorBooks = em.createQuery("SELECT a.name, SIZE(a.books)
+        // FROM Author a").getResultList();
+
+        // for (Object[] result : authorBooks) {
+        // System.out.println("Author: " + result[0] + "Books: " + result[1]);
+        // }
     }
 
     private static void authorsWithMoreThanOneReader(EntityManager em) {
         // Skapa en JPQL-fråga som hämtar alla författare där minst en av deras böcker
         // har lästs av en läsare.
         // Använd JOIN för att koppla författare till läsare genom böcker.
-        List<Author> authors = em.createQuery("FROM Author a JOIN a.books b JOIN b.bookReaders as r", Author.class)
+        List<Author> authors = em.createQuery("FROM Author a JOIN a.books b JOIN b.bookReaders r", Author.class)
                 .getResultList();
 
         // Hämta och skriv ut resultaten.
