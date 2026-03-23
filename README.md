@@ -1,6 +1,6 @@
 # BackendInl1
 
-Det här programmet fungerar enbart på unix system som har maven installerat
+Det här programmet fungerar enbart på unix system som har maven och java installerat
 
 För att köra programmet behöver du först starta databasen.
 
