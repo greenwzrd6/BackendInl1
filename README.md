@@ -1,5 +1,7 @@
 # BackendInl1
 
+Det här programmet fungerar enbart på unix system
+
 För att köra programmet behöver du först starta databasen.
 
 Gör såhär
