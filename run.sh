@@ -4,6 +4,6 @@ echo ""
 
 cd hibernateExcerciseBooks
 
-mvn clean compile
+mvn -q clean compile
 
 mvn -q exec:java
