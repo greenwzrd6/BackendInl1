@@ -172,9 +172,9 @@ public class TestHibernate {
         Author author1 = new Author("Birger", "Sverige");
         Author author2 = new Author("Ollie", "Australien");
         Author author3 = new Author("Beatrice", "England");
-        Author author4 = new Author("Jean-Pierre Baguette", "Frankrike");
-        Author author5 = new Author("Solveig Snöstorm", "Norge");
-        Author author6 = new Author("Hiroshi Hologram", "Japan");
+        Author author4 = new Author("Jean-Pierre", "Frankrike");
+        Author author5 = new Author("Solveig", "Norge");
+        Author author6 = new Author("Hiroshi", "Japan");
         Author author7 = new Author("Korven", "Korvstaden");
         // Skapa minst fem böcker och koppla dem till författarna.
         Book book1 = new Book("Bongo Bingo", "Komedi", 2000);
@@ -208,9 +208,9 @@ public class TestHibernate {
         Reader reader1 = new Reader("Börje", "burgaren@burger.com");
         Reader reader2 = new Reader("Felix", "flixmix@gmail.se");
         Reader reader3 = new Reader("Sanna", "santa@hotmail.it");
-        Reader reader4 = new Reader("Gunnar Grumpy", "ingen-reklam-tack@telia.se");
-        Reader reader5 = new Reader("Luna Lovebyte", "pixel_princess@cybercore.net");
-        Reader reader6 = new Reader("Kalle Kula", "glassbilen_88@yahoo.com");
+        Reader reader4 = new Reader("Gunnar", "ingen-reklam-tack@telia.se");
+        Reader reader5 = new Reader("Luna", "pixel_princess@cybercore.net");
+        Reader reader6 = new Reader("Kalle", "glassbilen_88@yahoo.com");
 
         reader1.addBook(book5);
         reader1.addBook(book3);
