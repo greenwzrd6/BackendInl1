@@ -1,7 +1,7 @@
-Tue Mar 24 08:55:03 CET 2026 : Apache Derby Network Server - 10.17.1.0 - (1913217) started and ready to accept connections on port 50000
+Tue Mar 24 09:02:23 CET 2026 : Apache Derby Network Server - 10.17.1.0 - (1913217) started and ready to accept connections on port 50000
 ----------------------------------------------------------------
-Tue Mar 24 08:55:06 CET 2026:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-019d-1ed7-0b76-00000f4f7f38 
+Tue Mar 24 09:02:30 CET 2026:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-019d-1edd-c602-00000f4f7f38 
 on database directory /Users/apamannen/ProgrammeringDelat/Yrgo/BackendProgrammering/BackendInl1/db-derby-10.17.1.0-bin/bin/library with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2c854dc5 
 Loaded from file:/Users/apamannen/ProgrammeringDelat/Yrgo/BackendProgrammering/BackendInl1/db-derby-10.17.1.0-bin/lib/derby.jar
 java.vendor=Eclipse Adoptium

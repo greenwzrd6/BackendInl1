@@ -64,7 +64,8 @@ public class TestHibernate {
         // Skapa en JPQL-fråga som räknar hur många böcker varje författare har skrivit.
         // Returnera författarens namn och antalet böcker.
         List<Object[]> result = em
-                .createQuery("SELECT a.name, COUNT(b) FROM Author a LEFT JOIN a.books b GROUP BY a.name", Object[].class)
+                .createQuery("SELECT a.name, COUNT(b) FROM Author a LEFT JOIN a.books b GROUP BY a.name",
+                        Object[].class)
                 .getResultList();
 
         // Skriv ut resultaten.
