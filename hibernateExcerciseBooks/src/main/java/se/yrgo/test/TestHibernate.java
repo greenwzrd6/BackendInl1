@@ -63,36 +63,28 @@ public class TestHibernate {
     private static void authorsAmountOfBooks(EntityManager em) {
         // Skapa en JPQL-fråga som räknar hur många böcker varje författare har skrivit.
         // Returnera författarens namn och antalet böcker.
-        List<Author> authors = em.createQuery("FROM Author a",
-                Author.class).getResultList();
+        List<Object[]> result = em
+                .createQuery("SELECT a.name, COUNT(b) FROM Author a LEFT JOIN a.books b GROUP BY a.name", Object[].class)
+                .getResultList();
 
         // Skriv ut resultaten.
         System.out.println("--------- Uppgift 5 ----------");
         System.out.println();
         System.out.println("\tVarje författares bokmängd:");
         System.out.println();
-        if (authors.isEmpty()) {
+        if (result.isEmpty()) {
             System.out.println("Hittade inga författare");
         } else {
             System.out.println("\t***************************");
-            for (Author author : authors) {
+            for (Object[] obj : result) {
                 System.out.printf("""
                         \tAuthor: %s
                         \tNumber of books: %d
                         \t***************************
-                        """, author.getName(), author.getBooks().size());
+                        """, obj[0], obj[1]);
             }
         }
         System.out.println();
-
-        // Går också att göra på detta sättet men tyckte det var mer otydligt än mitt
-        // sätt
-        // List<Object[]> authorBooks = em.createQuery("SELECT a.name, SIZE(a.books)
-        // FROM Author a").getResultList();
-
-        // for (Object[] result : authorBooks) {
-        // System.out.println("Author: " + result[0] + "Books: " + result[1]);
-        // }
     }
 
     private static void authorsWithMoreThanOneReader(EntityManager em) {
@@ -182,6 +174,7 @@ public class TestHibernate {
         Author author4 = new Author("Jean-Pierre Baguette", "Frankrike");
         Author author5 = new Author("Solveig Snöstorm", "Norge");
         Author author6 = new Author("Hiroshi Hologram", "Japan");
+        Author author7 = new Author("Korven", "Korvstaden");
         // Skapa minst fem böcker och koppla dem till författarna.
         Book book1 = new Book("Bongo Bingo", "Komedi", 2000);
         Book book2 = new Book("Birgers Bok", "Fakta", 1967);
@@ -236,6 +229,7 @@ public class TestHibernate {
         em.persist(author4);
         em.persist(author5);
         em.persist(author6);
+        em.persist(author7);
         em.persist(reader1);
         em.persist(reader2);
         em.persist(reader3);

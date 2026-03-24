@@ -1,12 +1,12 @@
-Mon Mar 23 14:48:49 CET 2026 : Apache Derby Network Server - 10.17.1.0 - (1913217) started and ready to accept connections on port 50000
+Tue Mar 24 08:55:03 CET 2026 : Apache Derby Network Server - 10.17.1.0 - (1913217) started and ready to accept connections on port 50000
 ----------------------------------------------------------------
-Mon Mar 23 14:49:04 CET 2026:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-019d-1af4-9347-00000f4f7f38 
-on database directory /Users/apamannen/ProgrammeringDelat/Yrgo/BackendProgrammering/Inl1/db-derby-10.17.1.0-bin/bin/library with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2c854dc5 
-Loaded from file:/Users/apamannen/ProgrammeringDelat/Yrgo/BackendProgrammering/Inl1/db-derby-10.17.1.0-bin/lib/derby.jar
+Tue Mar 24 08:55:06 CET 2026:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-019d-1ed7-0b76-00000f4f7f38 
+on database directory /Users/apamannen/ProgrammeringDelat/Yrgo/BackendProgrammering/BackendInl1/db-derby-10.17.1.0-bin/bin/library with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2c854dc5 
+Loaded from file:/Users/apamannen/ProgrammeringDelat/Yrgo/BackendProgrammering/BackendInl1/db-derby-10.17.1.0-bin/lib/derby.jar
 java.vendor=Eclipse Adoptium
 java.runtime.version=21.0.10+7-LTS
-user.dir=/Users/apamannen/ProgrammeringDelat/Yrgo/BackendProgrammering/Inl1/db-derby-10.17.1.0-bin/bin
+user.dir=/Users/apamannen/ProgrammeringDelat/Yrgo/BackendProgrammering/BackendInl1/db-derby-10.17.1.0-bin/bin
 os.name=Mac OS X
 os.arch=aarch64
 os.version=26.3.1
